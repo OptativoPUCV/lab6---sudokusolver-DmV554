@@ -63,8 +63,13 @@ List* get_adj_nodes(Node* n){
           }
         }
       }
-      pushBack(list, nuevoNodo);
+      if(primerCasillaEsta == 0) {
+        pushBack(list, nuevoNodo);
+      }
+      
     }
+
+    
     return list;
 }
 
