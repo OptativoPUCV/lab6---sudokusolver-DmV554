@@ -58,7 +58,7 @@ List* get_adj_nodes(Node* n){
       for(int k=0; k<9; k++) {
         for(int j=0; j<9; j++) {
           if(nuevoNodo->sudo[k][j] == 0 && primerCasillaEsta == 0) {
-            nuevoNodo->sudo[k][j] = i+1;
+            nuevoNodo->sudo[k][j] = i;
             primerCasillaEsta = 1;
           }
         }
