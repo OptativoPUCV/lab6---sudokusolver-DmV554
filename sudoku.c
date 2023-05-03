@@ -63,7 +63,7 @@ List* get_adj_nodes(Node* n){
           }
         }
       }
-      if(primerCasillaEsta == 0) {
+      if(primerCasillaEsta == 1) {
         pushBack(list, nuevoNodo);
       }
       
