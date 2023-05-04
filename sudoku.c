@@ -50,7 +50,7 @@ int is_valid(Node* n){
     //int*vectorCerosColumnas = calloc(9, sizeof(int));
     for(int k=0; k<9; k++) {
       int num = n->sudo[i][k];
-      int numColumna = n->sudo[k][i];
+      //int numColumna = n->sudo[k][i];
       
       if(num != 0) {
         if(vectorCerosFilas[num] == 0) {

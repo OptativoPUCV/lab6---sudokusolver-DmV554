@@ -144,3 +144,9 @@ sudoku.c:53:11: error: unused variable ‘numColumna’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 d115f5a
+Thu 04 May 2023 05:24:01 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+b55b911
