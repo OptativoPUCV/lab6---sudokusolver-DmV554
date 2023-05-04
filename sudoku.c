@@ -59,11 +59,11 @@ int is_valid(Node* n){
           return 0;
         }
 
-        if(vectorCerosColumnas[numColumna] == 0) {
+        /*if(vectorCerosColumnas[numColumna] == 0) {
           vectorCerosColumnas[numColumna] = 1;
         } else {
           return 0;
-        }
+        }*/
     
 
 

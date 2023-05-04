@@ -119,3 +119,17 @@ Thu 04 May 2023 05:23:35 PM UTC:
  tests:  2|4
 total_score: 15/70
 44d9318
+Thu 04 May 2023 05:23:49 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:11: error: unused variable ‘numColumna’ [-Werror=unused-variable]
+   53 |       int numColumna = n->sudo[k][i];
+      |           ^~~~~~~~~~
+sudoku.c:50:9: error: unused variable ‘vectorCerosColumnas’ [-Werror=unused-variable]
+   50 |     int*vectorCerosColumnas = calloc(9, sizeof(int));
+      |         ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a48ea69
