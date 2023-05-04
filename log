@@ -72,3 +72,9 @@ sudoku.c:65:27: error: subscripted value is neither array nor pointer nor vector
       |                           ^
 Compilation failed
 887cfda
+Thu 04 May 2023 04:50:48 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+025f591
