@@ -45,18 +45,20 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-  int*vectorCeros = calloc(10, sizeof(int));
   for(int i=0; i<9; i++) {
+    int*vectorCerosFilas = calloc(9, sizeof(int));
+    int*vectorCerosColumnas = calloc(9, sizeof(int));
     for(int k=0; k<9; k++) {
       int num = n->sudo[i][k];
 
-      if(vectorCeros[num] == 0) {
-        vectorCeros[num] = 1;
-      } else {
-        return 0;
-      }
+      if(num != 0) {
+        if(vectorCerosFilas[num] == 0) {
+          vectorCerosFilas[num] = 1;
+        } else {
+          return 0;
+        }
+      }  
     }
-      
   }
 
 
