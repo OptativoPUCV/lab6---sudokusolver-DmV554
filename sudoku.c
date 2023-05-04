@@ -45,34 +45,73 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
+  int*vectorCeros = calloc(10, sizeof(int));
   for(int i=0; i<9; i++) {
+    int k=0;
+    int num = n->sudo[i][k];
+  
+    if(vectorCeros[num] == 0) {
+      vectorCeros[num] = 1;
+    } else {
+      return 0;
+    }
+    k++;
+  
+  }
+
+
+   for(int i=0; i<9; i++) {
     
   }
+  
+
+   for(int i=0; i<9; i++) {
+    
+  }
+
+  
     return 1;
 }
 
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
+  
+    for(int i=0; i<9; i++) {
+      Node*nuevoNodo = copy(n);
+      int primerCasillaEsta = 0;
+      for(int k=0; k<9; k++) {
+        for(int j=0; j<9; j++) {
+          if(nuevoNodo->sudo[k][j] == 0 && primerCasillaEsta == 0) {
+            nuevoNodo->sudo[k][j] = i+1;
+            primerCasillaEsta = 1;
+          }
+        }
+      }
+      if(primerCasillaEsta == 1) {
+        pushBack(list, nuevoNodo);
+      }
+      
+    }
+    return list;
+
+
+  /*List* list=createList();
     
     for(int i=0; i<9; i++) {
       for(int k=0; k<9; k++) {
         if(n->sudo[i][k] == 0) {
-          
            for(int j=0; j<9; j++) {
               Node*nuevoNodo = copy(n);
               nuevoNodo->sudo[i][k] = j+1;
               pushBack(list, nuevoNodo);
-            
           }
         }
       }
-      
-        
-      
-      
     }
     return list;
+}*/
+  
 }
 
 
