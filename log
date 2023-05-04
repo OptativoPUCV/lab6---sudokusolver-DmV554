@@ -62,3 +62,13 @@ sudoku.c:65:27: error: subscripted value is neither array nor pointer nor vector
       |                           ^
 Compilation failed
 d5aab13
+Thu 04 May 2023 04:50:28 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:65:27: error: subscripted value is neither array nor pointer nor vector
+   65 |               nuevoNodo[i][k] = j+1;
+      |                           ^
+Compilation failed
+887cfda
