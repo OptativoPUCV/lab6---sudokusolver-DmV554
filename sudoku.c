@@ -47,16 +47,27 @@ int is_valid(Node* n){
 
   for(int i=0; i<9; i++) {
     int*vectorCerosFilas = calloc(9, sizeof(int));
-    //int*vectorCerosColumnas = calloc(9, sizeof(int));
+    int*vectorCerosColumnas = calloc(9, sizeof(int));
     for(int k=0; k<9; k++) {
       int num = n->sudo[i][k];
-
+      int numColumna = n->sudo[k][i];
+      
       if(num != 0) {
         if(vectorCerosFilas[num] == 0) {
           vectorCerosFilas[num] = 1;
         } else {
           return 0;
         }
+
+        if(vectorCerosColumnas[numColumna] == 0) {
+          vectorCerosColumnas[numColumna] = 1;
+        } else {
+          return 0;
+        }
+    
+
+
+        
       }  
     }
   }
