@@ -133,3 +133,14 @@ sudoku.c:50:9: error: unused variable ‘vectorCerosColumnas’ [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 a48ea69
+Thu 04 May 2023 05:23:55 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:11: error: unused variable ‘numColumna’ [-Werror=unused-variable]
+   53 |       int numColumna = n->sudo[k][i];
+      |           ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d115f5a
