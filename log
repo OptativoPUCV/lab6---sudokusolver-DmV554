@@ -52,3 +52,13 @@ Wed 03 May 2023 03:43:08 PM UTC:
  tests:  2|4
 total_score: 15/70
 87c803a
+Thu 04 May 2023 04:50:11 PM UTC: 
+ sudoku.c | 19 +++++++++++--------
+ 1 file changed, 11 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:65:27: error: subscripted value is neither array nor pointer nor vector
+   65 |               nuevoNodo[k][j] = j+1;
+      |                           ^
+Compilation failed
+d5aab13
