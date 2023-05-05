@@ -72,15 +72,7 @@ int is_valid(Node* n){
   }
 
 
-   for(int i=0; i<9; i++) {
-    
-  }
-  
-
-   for(int i=0; i<9; i++) {
-    
-  }
-
+ 
   
     return 1;
 }
