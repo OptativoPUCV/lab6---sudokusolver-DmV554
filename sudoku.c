@@ -158,6 +158,7 @@ Node* DFS(Node* initial, int* cont){
     pop(S);
 
     if(is_final(nodoCurrent)) {
+      clean(S);
       return nodoCurrent;
     }
 
