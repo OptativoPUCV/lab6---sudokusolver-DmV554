@@ -150,10 +150,10 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  /*Stack* S = createStack();
+  Stack* S = createStack();
   push(S, initial);
 
-  while(S != NULL) {
+  while(!is_empty(S)) {
     Node*nodoCurrent = top(S);
     pop(S);
 
@@ -173,9 +173,9 @@ Node* DFS(Node* initial, int* cont){
     
   }
   
-  return NULL;*/
+  return NULL;
 
-   Stack* S = createStack();
+   /*Stack* S = createStack();
     push(S, initial);
     
     while(is_empty(S)){
@@ -200,7 +200,7 @@ Node* DFS(Node* initial, int* cont){
     }
     
     clean(S);
-    return NULL;
+    return NULL;*/
 }
 
 
