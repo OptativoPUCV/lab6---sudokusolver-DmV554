@@ -186,3 +186,15 @@ Sat 06 May 2023 11:00:23 PM UTC:
  tests:  7|1
 total_score: 55/70
 50aa3be
+Sat 06 May 2023 11:14:44 PM UTC: 
+ sudoku.c | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:161:14: error: ‘NodoCurrent’ undeclared (first use in this function); did you mean ‘nodoCurrent’?
+  161 |       return NodoCurrent;
+      |              ^~~~~~~~~~~
+      |              nodoCurrent
+sudoku.c:161:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+689d876
