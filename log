@@ -228,3 +228,19 @@ sudoku.c:198:9: error: implicit declaration of function ‘destroyList’ [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 71d2902
+Sat 06 May 2023 11:16:26 PM UTC: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:178:13: error: ‘n’ undeclared (first use in this function)
+  178 |     push(S, n);
+      |             ^
+sudoku.c:178:13: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:180:12: error: implicit declaration of function ‘isEmpty’; did you mean ‘is_empty’? [-Werror=implicit-function-declaration]
+  180 |     while(!isEmpty(S)){
+      |            ^~~~~~~
+      |            is_empty
+cc1: all warnings being treated as errors
+Compilation failed
+280430f

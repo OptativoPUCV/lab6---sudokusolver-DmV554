@@ -183,7 +183,7 @@ Node* DFS(Node* initial, int* cont){
         (*cont)++;
         
         if(is_final(current)){
-            destroyStack(S);
+            clean(S);
             return current;
         }
         
@@ -194,11 +194,11 @@ Node* DFS(Node* initial, int* cont){
             adj_node = next(adj_nodes);
         }
         
-        destroyNode(current);
-        destroyList(adj_nodes);
+        free(current);
+        clean(adj_nodes);
     }
     
-    destroyStack(S);
+    clean(S);
     return NULL;
 }
 
