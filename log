@@ -316,3 +316,14 @@ sudoku.c:187:13: error: implicit declaration of function ‘destroyStack’ [-We
 cc1: all warnings being treated as errors
 Compilation failed
 84f9c85
+Sat 06 May 2023 11:25:26 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:179:13: error: ‘n’ undeclared (first use in this function)
+  179 |     push(S, n);
+      |             ^
+sudoku.c:179:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+930770a
