@@ -158,7 +158,7 @@ Node* DFS(Node* initial, int* cont){
     pop(S);
 
     if(is_final(nodoCurrent)) {
-      return NodoCurrent;
+      return nodoCurrent;
     }
 
     List* nodosAdyacentes = get_adj_nodes(nodoCurrent);
