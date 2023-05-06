@@ -327,3 +327,8 @@ sudoku.c:179:13: error: ‘n’ undeclared (first use in this function)
 sudoku.c:179:13: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 930770a
+Sat 06 May 2023 11:25:37 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+3d941f3
