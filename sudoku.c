@@ -155,7 +155,7 @@ Node* DFS(Node* initial, int* cont){
 
   while(S != NULL) {
     Node*nodoCurrent = top(S);
-    pop(S);
+    //pop(S);
 
     if(is_final(nodoCurrent)) {
       return nodoCurrent;
