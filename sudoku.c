@@ -164,6 +164,7 @@ Node* DFS(Node* initial, int* cont){
     List* nodosAdyacentes = get_adj_nodes(nodoCurrent);
     
         Node* NodoAd = first(nodosAdyacentes);
+    
         while(NodoAd){
             push(S, NodoAd);
             NodoAd = next(nodosAdyacentes);
@@ -175,32 +176,6 @@ Node* DFS(Node* initial, int* cont){
   
   return NULL;
 
-   /*Stack* S = createStack();
-    push(S, initial);
-    
-    while(is_empty(S)){
-        Node* current = top(S);
-        pop(S);
-        (*cont)++;
-        
-        if(is_final(current)){
-            clean(S);
-            return current;
-        }
-        
-        List* adj_nodes = get_adj_nodes(current);
-        Node* adj_node = first(adj_nodes);
-        while(adj_node){
-            push(S, adj_node);
-            adj_node = next(adj_nodes);
-        }
-        
-        free(current);
-        clean(adj_nodes);
-    }
-    
-    clean(S);
-    return NULL;*/
 }
 
 
