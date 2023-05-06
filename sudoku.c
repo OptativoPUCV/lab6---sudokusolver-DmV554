@@ -111,7 +111,7 @@ List* get_adj_nodes(Node* n){
           }
         }
       }
-      if(primerCasillaEsta == 1) {
+      if(primerCasillaEsta == 1 && is_valid(nuevoNodo)) {
         pushBack(list, nuevoNodo);
       }
       
