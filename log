@@ -203,3 +203,28 @@ Sat 06 May 2023 11:14:54 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e2fc5fd
+Sat 06 May 2023 11:16:01 PM UTC: 
+ sudoku.c | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:178:13: error: ‘n’ undeclared (first use in this function)
+  178 |     push(S, n);
+      |             ^
+sudoku.c:178:13: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:180:12: error: implicit declaration of function ‘isEmpty’; did you mean ‘is_empty’? [-Werror=implicit-function-declaration]
+  180 |     while(!isEmpty(S)){
+      |            ^~~~~~~
+      |            is_empty
+sudoku.c:186:13: error: implicit declaration of function ‘destroyStack’ [-Werror=implicit-function-declaration]
+  186 |             destroyStack(S);
+      |             ^~~~~~~~~~~~
+sudoku.c:197:9: error: implicit declaration of function ‘destroyNode’ [-Werror=implicit-function-declaration]
+  197 |         destroyNode(current);
+      |         ^~~~~~~~~~~
+sudoku.c:198:9: error: implicit declaration of function ‘destroyList’ [-Werror=implicit-function-declaration]
+  198 |         destroyList(adj_nodes);
+      |         ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+71d2902
