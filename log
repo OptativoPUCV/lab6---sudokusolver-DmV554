@@ -301,3 +301,18 @@ sudoku.c:199:9: error: implicit declaration of function ‘destroyList’ [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 e76b253
+Sat 06 May 2023 11:25:22 PM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:179:13: error: ‘n’ undeclared (first use in this function)
+  179 |     push(S, n);
+      |             ^
+sudoku.c:179:13: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:187:13: error: implicit declaration of function ‘destroyStack’ [-Werror=implicit-function-declaration]
+  187 |             destroyStack(S);
+      |             ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+84f9c85
