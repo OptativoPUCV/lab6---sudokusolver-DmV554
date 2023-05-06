@@ -157,12 +157,11 @@ Node* DFS(Node* initial, int* cont){
     Node*nodoCurrent = top(S);
     pop(S);
 
-    if(is_final(nodoCurrent)) {
-      clean(S);
-      return nodoCurrent;
+    if(is_final(initial)) {
+      return initial;
     }
 
-    List* nodosAdyacentes = get_adj_nodes(nodoCurrent);
+    List* nodosAdyacentes = get_adj_nodes(initial);
     
         Node* NodoAd = first(nodosAdyacentes);
         while(NodoAd){
@@ -170,7 +169,7 @@ Node* DFS(Node* initial, int* cont){
             NodoAd = next(nodosAdyacentes);
         }
 
-        free(nodoCurrent);
+        free(initial);
     
   }
   

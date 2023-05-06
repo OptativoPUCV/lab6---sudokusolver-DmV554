@@ -264,3 +264,14 @@ Sat 06 May 2023 11:20:55 PM UTC:
  1 file changed, 1 insertion(+)
  tests:  0|0
 5372c4b
+Sat 06 May 2023 11:23:45 PM UTC: 
+ sudoku.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:157:10: error: unused variable ‘nodoCurrent’ [-Werror=unused-variable]
+  157 |     Node*nodoCurrent = top(S);
+      |          ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ea44163
