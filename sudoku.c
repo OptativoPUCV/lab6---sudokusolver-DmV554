@@ -59,7 +59,6 @@ int is_valid(Node* n){
           return 0;
         }
       }
-
       if(numColumna != 0) {
         if(vectorCerosColumnas[numColumna] == 0) {
           vectorCerosColumnas[numColumna] = 1;
@@ -72,7 +71,19 @@ int is_valid(Node* n){
   }
 
 
- 
+
+  for (int l = 0; l < 9; l++) {
+        int *vectorSubMatrices = calloc(9, sizeof(int));
+        for (int p = 0; p < 9; p++) {
+            int i = 3*(l/3) + (p/3);
+            int j = 3*(l%3) + (p%3);
+            if (n->sudo[i][j] == 0) continue; 
+            if (vectorSubMatrices[n->sudo[i][j]] == 1) return 0; 
+            vectorSubMatrices[n->sudo[i][j]] = 1; 
+        }
+    }
+
+  
   
     return 1;
 }
